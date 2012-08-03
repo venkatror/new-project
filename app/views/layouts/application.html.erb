@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StudentEnquiry</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div id="entire_web_page2">
+      <h1> my web page</h1>
+    </div>
+
+    <div id = "top_part">
+      <table >
+        <tr>
+          <% if student_signed_in? %>
+            <td  bgcolor="#3399FF" ><%= link_to "Sign out", destroy_student_session_path, :method => :delete %> </td>
+            <%if isadmin%>
+              <td  bgcolor="#3399FF" ><%=link_to_unless current_page?(:action=>"students/enquires"),'enquries',{:controller=>"students", :action=> "enquires"}%></td>
+            <%end%>
+          <% else %>
+            <td  bgcolor="#3399FF" ><%= link_to "Sign up", new_student_registration_path %>  </td>
+            <td bgcolor="#3399FF"><%= link_to "sign in", new_student_session_path %></td>
+
+
+
+
+
+          <% end %></tr>
+      </table>
+    </div>
+
+    <div id= "middle3">
+      <div id = "leftside_part">
+        <ul>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+          <li>four</li>
+          <li>five</li>
+          <li>six</li>
+        </ul>
+      </div>
+
+
+      <div id="middle_part">
+        <p><%=notice %></p>
+        <p><%=alert %></p>
+
+
+
+        <%= yield %>
+      </div>
+
+
+      <div id = "right_part">
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+        <li>eleven</li>
+        <li>twelve</li>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </body>
+
+</html>

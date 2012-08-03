@@ -1,0 +1,22 @@
+
+<table border=2px solid>
+  <th>Student Name</th>
+   <th>Intrested Course</th>
+    <th>Time Slot</th>
+    <th>address</th>
+    <% if @student == nil %>
+	<p> no records available</p>
+	<%else%>
+    <%for s in @student%>
+        <%if verifystudent(s)%>
+    <tr>
+      <td><%=s.first_name%></td>
+      <td><%=s.course_name%></td>
+      <td><%=s.timeslot_info%></td>
+      <td><%=s.contact_details%></td>
+    </tr>
+    <%end%>
+    <%end%>
+    <%end%>
+
+</table>

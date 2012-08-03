@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+td{
+	padding: 5px;
+
+}
+tr{
+
+
+	padding: 25px;
+}
+h1{text-align:center;}
+#entire_web_page2{
+background-color:#6495ed;
+margin-top:50px;
+margin-left:100px;
+	width:1065px;}
+
+#top_part{
+background-color:#e0ffff;
+margin-top:-20px;
+width:1065px;
+margin-left:100px;
+
+}
+#middle3{background-color:red;
+	margin-top:5px;
+
+	width:1065px;
+	margin-left:100px;
+
+
+}
+#leftside_part{
+	float:left;
+	background-color:#6495ed;
+	margin-top:0px;
+	height:600px;
+width:205px;
+padding:25px;
+}
+#middle_part{
+	float: left;
+
+	margin-top:0px;
+	background-color:#b0c4de;
+
+    height:600px;
+    width:490px;
+    margin-left:5px;
+    padding:25px;
+
+
+
+
+}
+#right_part{
+float:left;
+
+	background-color:#6495ed;
+	margin-left:6px;
+		width:207px;
+		padding:25px;
+		height:600px;
+
+
+	}
+#bottom{
+	float:left;
+	width:1057px;
+	margin-top:5px;
+	background-color:#e0ffff;
+ text-align:right;
+	padding:5px;
+
+}
+.pagination { padding: 3px; margin: 3px; text-decoration: none}
+.pagination a { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid red; text-decoration: none; color: red; }
+.pagination a:hover, .pagination a:active { border: 1px solid orange; color: pink; }
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid green; color: yellow; }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
